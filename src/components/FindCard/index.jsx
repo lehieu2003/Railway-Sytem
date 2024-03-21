@@ -1,52 +1,67 @@
 import {
   Container,
-  Select,
-  InputContainerRight,
-  InputContainerLeft,
-  SpaceContainer,
   Button,
+  InputContainer,
+  StationInput,
+  DateClassInput,
+  PassengerInput,
+  StationFrom,
+  StationTo,
   Label,
+  Select,
+  DateInput,
+  ClassInput,
 } from "./FindCardElement";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 const FindCard = () => {
   return (
     <Container>
-      <InputContainerLeft>
-        <Label>From</Label>
-        <Select>
-          <option value="" disabled selected>
-            Select a station
-          </option>
-        </Select>
-      </InputContainerLeft>
-      <SpaceContainer />
-      <InputContainerRight>
-        <Label>To</Label>
-        <Select>
-          <option value="" disabled selected>
-            Select a station
-          </option>
-        </Select>
-      </InputContainerRight>
+      <InputContainer>
+        <StationInput>
+          <StationFrom>
+            <Label>From</Label>
+            <Select>
+              <option value="">Select a station</option>
+            </Select>
+          </StationFrom>
 
-      <InputContainerLeft>
-        <Label>From</Label>
-        <Select>
-          <option value="" disabled selected>
-            Select a station
-          </option>
-        </Select>
-      </InputContainerLeft>
-      <SpaceContainer />
-      <InputContainerRight>
-        <Label>To</Label>
-        <Select>
-          <option value="" disabled selected>
-            Select a station
-          </option>
-        </Select>
-      </InputContainerRight>
+          <StationTo>
+            <Label>To</Label>
+            <Select>
+              <option value="">Select a station</option>
+            </Select>
+          </StationTo>
+        </StationInput>
 
+        <DateClassInput>
+          <DateInput>
+            <Label>Date</Label>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DemoContainer components={["DatePicker"]}>
+                <div style={{ backgroundColor: "white", borderRadius: "5px" }}>
+                  <DatePicker style={{ backgroundColor: "white" }} />
+                </div>
+              </DemoContainer>
+            </LocalizationProvider>
+          </DateInput>
+          <ClassInput>
+            <Label>Class</Label>
+            <Select>
+              <option value="">Select a station</option>
+            </Select>
+          </ClassInput>
+        </DateClassInput>
+        <PassengerInput>
+          <Label>Passengers</Label>
+          <Select>
+            <option value="">Select a station</option>
+          </Select>
+        </PassengerInput>
+      </InputContainer>
       <Button>Find</Button>
     </Container>
   );

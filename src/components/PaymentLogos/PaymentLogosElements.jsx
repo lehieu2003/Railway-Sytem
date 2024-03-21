@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: #fff;
+  font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,17 +16,4 @@ export const Container = styled.div`
     flex-wrap: wrap;
     gap: 20px;
   }
-`;
-
-export const Logos = styled.div`
-  background-image: url(${({ src }) => src});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height: 50px;
-  width: 60px;
-
-  justify-content: center;
-  align-items: center;
 `;

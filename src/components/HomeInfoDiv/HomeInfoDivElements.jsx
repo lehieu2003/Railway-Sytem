@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: #fff;
+  background-color: #f6f6f9;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0px 0px 0px 0px;
   flex-direction: row;
-  margin: auto;
+  margin: 0 auto;
   width: 90%;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -18,7 +17,6 @@ export const Container = styled.div`
 `;
 
 export const LogoAndTextBox = styled.div`
-  background: #fff;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -46,7 +44,6 @@ export const Logo = styled.div`
 `;
 
 export const TextBox = styled.div`
-  background: #fff;
   display: flex;
   justify-content: center;
   padding: 0px 0px 40px 0px;

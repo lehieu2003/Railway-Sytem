@@ -3,81 +3,90 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: rgba(41, 38, 38, 0.85);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 30px 0px 30px 0px;
-  margin: auto;
-  width: 90%;
+  padding: 30px;
+  width: 80%;
   border-radius: 10px;
+  gap: 20px;
+`;
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+`;
+export const StationInput = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+`;
+export const StationFrom = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+`;
+export const StationTo = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+`;
+export const DateClassInput = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+`;
+export const DateInput = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+// export const LocalizationProvider = styled.LocalizationProvider`
+//   display: flex;
+//   width: 45%;
+//   background-color: white;
+// `;
+
+export const ClassInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+`;
+export const PassengerInput = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
-export const SpaceContainer = styled.div`
+export const InputBottom = styled.div`
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 0px 0px 30px 0px;
-  margin: 0px;
-  width: 5%;
+  width: 100%;
 `;
 
 export const Label = styled.label`
   color: #fff;
   font-weight: bold;
-  padding: 0px 0px 8px 0px;
-`;
-
-export const InputContainerLeft = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  padding: 0px 0px 30px 0px;
-  margin: 0px;
-  width: 42.5%;
-`;
-
-export const InputContainerRight = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  padding: 0px 0px 30px 0px;
-  margin: 0px;
-  width: 42.5%;
+  margin-bottom: 8px;
+  width: 100%;
 `;
 
 export const Select = styled.select`
   width: 100%;
-  padding: 9px 0px 9px 0px;
+  padding: 10px;
   font-size: 16px;
+  border-radius: 10px;
 `;
 
-export const Heading = styled.div`
-  background: #102f63;
-  align-items: center;
-  border-radius: 7px 7px 0px 0px;
-  border: 5px solid #102f63;
-  justify-content: center;
-  padding: 10px 0px 10px 0px;
-  margin: auto;
-  width: 100%;
-`;
-
-export const Table = styled.table`
-  width: 100%;
-  background: #fff;
-  border-collapse: collapse;
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 100px 0px 0px 0px;
-  }
-`;
+export const InputPassenger = styled.div``;
 
 export const Button = styled.button`
   background: #102f63;
   color: white;
-  width: 90%;
+  width: 100%;
   height: 40px;
   cursor: pointer;
   border-radius: 10px 10px 10px 10px;

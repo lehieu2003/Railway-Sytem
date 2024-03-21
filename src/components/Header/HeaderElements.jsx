@@ -3,15 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-image: url("headerBackground.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
+  /* object-fit: cover; */
 
   display: flex;
   align-items: center;
   padding: 120px 0px 40px 0px;
   justify-content: space-between;
   flex-direction: row;
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   height: 70vh;
   gap: 20px;

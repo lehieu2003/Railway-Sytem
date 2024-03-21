@@ -4,6 +4,9 @@ import {
   LogoAndTextBox,
   TextBox,
 } from "./HomeInfoDivElements";
+import { FaRegClock } from "react-icons/fa";
+import { CiLock } from "react-icons/ci";
+import { CiShoppingTag } from "react-icons/ci";
 
 const HomeInfoDiv = () => {
   const styleSmallText = {
@@ -16,7 +19,7 @@ const HomeInfoDiv = () => {
   return (
     <Container>
       <LogoAndTextBox>
-        <Logo src={`tag.png`} />
+        <CiShoppingTag />
         <TextBox>
           <h2 style={styleLargeText}>
             Get Train Tickets from the comfort of your home
@@ -32,7 +35,8 @@ const HomeInfoDiv = () => {
       </LogoAndTextBox>
 
       <LogoAndTextBox>
-        <Logo src={`clock.png`} />
+        <FaRegClock />
+
         <TextBox>
           <h2 style={styleLargeText}>
             Train & Ticketing related information at your fingertips
@@ -46,7 +50,8 @@ const HomeInfoDiv = () => {
       </LogoAndTextBox>
 
       <LogoAndTextBox>
-        <Logo src={`lock.png`} />
+        <CiLock />
+
         <TextBox>
           <h2 style={styleLargeText}>Pay Securely</h2>
           <br></br>
